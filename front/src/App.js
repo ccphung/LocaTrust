@@ -8,6 +8,11 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
 import Ads from './pages/Ads';
+import MessageBox from './pages/MessageBox';
+import Contact from './pages/Contact';
+import Rating from './pages/Rating';
+import Tenant from './pages/Tenant';
+import Ad from './pages/Ad';
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
             <Route path="/login" element={<Login/>} />
             <Route path="/registration" element={<Registration/>} />
             <Route path="/ads" element={<Ads/>} />
+            <Route path="/Ad" element={<Ad/>} />
+            <Route path="/Tenant" element={<Tenant/>} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/messagebox" element={<MessageBox/>} />
+            <Route path="/Rating" element={<Rating/>} />
         </Routes>
     </Router>
   );
