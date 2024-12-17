@@ -26,7 +26,7 @@ const LogoTrust = styled.span`
   color: #520058;
   font-weight: bold;
 `
-const NavMenu = styled.div`
+const NavMenu = styled.a`
   color: #520058;
   cursor: pointer;
   text-shadow: 0px 5px 10px gray;
@@ -43,7 +43,7 @@ function Nav() {
       <LogoContainer href="/" visibility={`${homeUrl === "/" ? "hidden" : "visibile"}`}>
           <LogoLoca>Loca</LogoLoca><LogoTrust>Trust</LogoTrust>
       </LogoContainer>
-      <NavMenu>Connexion/Inscription</NavMenu>
+      <NavMenu href='/registration'>Connexion/Inscription</NavMenu>
     </NavContainer>
   )
 }
