@@ -21,10 +21,11 @@ const LogoContainer = styled.a`
 `
 const LogoLoca = styled.span`
   color: black;
+  font-family: 'Laila';
 `
 const LogoTrust = styled.span`
   color: #520058;
-  font-weight: bold;
+  font-family: 'Laila-bold';
 `
 const NavMenu = styled.a`
   color: #520058;
