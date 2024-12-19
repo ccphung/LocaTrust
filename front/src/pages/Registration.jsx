@@ -77,8 +77,7 @@ const LoginLink = styled.a`
 `
 
 
-
-function Registration() {
+const Registration = () => {
   return (
     <>
       <Nav />

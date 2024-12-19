@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Rating() {
+const Rating = () => {
   return (
     <div>Rating</div>
   )
