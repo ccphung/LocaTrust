@@ -43,25 +43,6 @@ const LoginInput = styled.input`
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 `
 
-const LoginButton = styled.button`
-  display: block;
-  padding: 1rem;
-  margin: 0.25rem 0.25rem 0 0;
-  background-color: #520058;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  font-weight: 500;
-  width: 100%;
-  border-radius: 0.5rem;
-  text-transform: uppercase;
-  cursor: pointer;
-
-    &:hover{
-    background:#52005899;
-  } 
-`;
-
 const LoginLinkWrapper = styled.div`
   display:flex;
   justify-content: space-between;
@@ -79,7 +60,7 @@ const LoginLink = styled.a`
 `
 
 
-function Login() {
+const Login = () => {
   return (
     <>
       <Nav />
@@ -99,7 +80,6 @@ function Login() {
               </LoginLinkWrapper>
           </LoginForm>
       </LoginContainer>
-
     </>
   )
 }

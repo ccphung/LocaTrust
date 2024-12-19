@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Ads() {
+const Ads = () =>  {
   return (
     <div>Ads</div>
   )
