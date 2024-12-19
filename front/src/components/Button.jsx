@@ -30,12 +30,15 @@ const EmptyButton = styled.button`
   line-height: 1rem;
   font-weight: 500;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
+  background: white;
 
     &:hover{
     background:#52005899;
+    color:white;
+    border: 2px solid white;
   } 
 `;
 
