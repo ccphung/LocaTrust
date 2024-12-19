@@ -29,7 +29,7 @@ const EmptyButton = styled.button`
   font-size: 0.875rem;
   line-height: 1rem;
   font-weight: 500;
-  width: 100%;
+  width: ${(props) => props.width || "100%"};
   border-radius: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -45,8 +45,8 @@ const EmptyButton = styled.button`
 const Button = ({ label, style }) => {
   return (
     style === "filled" ? 
-        <FilledButton>{label}</FilledButton> 
-        : <EmptyButton>{label}</EmptyButton>
+        <FilledButton width>{label}</FilledButton> 
+        : <EmptyButton width>{label}</EmptyButton>
   );
 };
 
