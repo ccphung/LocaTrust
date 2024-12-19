@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Nav from '../components/Nav'
+import Button from '../components/Button'
 
 const LoginContainer = styled.div`
   display:flex;
@@ -91,13 +92,14 @@ function Login() {
                 <LoginInput type="email" name="email" id="email" placeholder="Adresse e-mail"/>
                 <LoginInput type="password" name="password" id="password" placeholder="Mot de passe"/>
               </LoginInputContainer>
-              <LoginButton type="submit" method="POST" >Connexion</LoginButton>
+              <Button label="Connexion" style="filled"/>
               <LoginLinkWrapper>
                 <LoginLink>Mot de passe oublié ?</LoginLink>
-                <LoginLink href=''>Créer un compte</LoginLink>
+                <LoginLink href='/registration'>Créer un compte</LoginLink>
               </LoginLinkWrapper>
           </LoginForm>
       </LoginContainer>
+
     </>
   )
 }
