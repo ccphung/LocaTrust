@@ -37,7 +37,7 @@ const NavMenu = styled.a`
   }
 `
 
-function Nav() {
+const Nav = () => {
   const homeUrl = useLocation().pathname;
   return (
     <NavContainer>

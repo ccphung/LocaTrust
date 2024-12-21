@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Tenant() {
+const Tenant = () => {
   return (
     <div>Tenant</div>
   )

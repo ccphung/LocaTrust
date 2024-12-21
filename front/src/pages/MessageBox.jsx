@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MessageBox() {
+const MessageBox = () => {
   return (
     <div>MessageBox</div>
   )
