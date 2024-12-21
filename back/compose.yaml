@@ -1,5 +1,16 @@
 
 services:
+  php:
+      image: zoo_project
+      container_name: zoo
+      ports:
+        - 8081:80
+      volumes:
+        - .:/var/www/html/
+      build: 
+        context: .
+        dockerfile: Dockerfile
+      user: "www-data"
 ###> doctrine/doctrine-bundle ###
   database:
     image: postgres:${POSTGRES_VERSION:-16}-alpine

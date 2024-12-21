@@ -1,0 +1,22 @@
+
+services:
+  frontend:
+    image: php:8.2-apache
+    container_name: locatrust-front
+    build:
+      context: .
+      dockerfile: front/Dockerfile
+    ports:
+      - "5000:5000"
+
+
+  backend:
+    image: node:20-alpine
+    container_name: locatrust-back
+    build:
+      context: .
+      dockerfile: back/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=mysql://user:password@mysql:3306/db_name
