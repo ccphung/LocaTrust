@@ -1,0 +1,12 @@
+
+:root {
+  --primary-color: #520058;
+  --secondary-color: black;
+  --font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
