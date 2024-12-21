@@ -1,22 +1,42 @@
-
 services:
+  mysql:
+    container_name: mysql
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: locatrust
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - 4307:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
   frontend:
-    image: php:8.2-apache
     container_name: locatrust-front
     build:
-      context: .
-      dockerfile: front/Dockerfile
+      context: ./front
     ports:
-      - "5000:5000"
-
+      - "3000:3000"
 
   backend:
-    image: node:20-alpine
     container_name: locatrust-back
     build:
-      context: .
-      dockerfile: back/Dockerfile
+      context: ./back
     ports:
-      - "8000:8000"
+      - "8082:80"
+    volumes:
+      - ./back/apache.conf:/etc/apache2/sites-available/000-default.conf
+      - ./back:/var/www 
+    depends_on:
+      - mysql
+  phpma:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
     environment:
-      - DATABASE_URL=mysql://user:password@mysql:3306/db_name
+      PMA_ARBITRARY: 1
+      PMA_HOST: mysql
+      PMA_USER: admin
+      PMA_PASSWORD: admin
+    ports:
+      - 8899:80
+  
