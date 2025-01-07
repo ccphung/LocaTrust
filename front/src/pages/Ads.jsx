@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../components/Nav'
 import styled from 'styled-components'
 import Checkbox from '../components/Checkbox'
 import Button from '../components/Button'
@@ -53,7 +52,6 @@ const AdFeatures = styled.div`
 const Ads = () => {
   return (
     <>
-      <Nav />
         <AdContainer>
           <h3>Ma recherche</h3>
           <AdWrapper>

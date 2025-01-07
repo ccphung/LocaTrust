@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FilledButton = styled.button`
+export const FilledButton = styled.button`
   display: block;
   padding: 1rem;
   margin: 0.25rem 0.25rem 0 0;
@@ -20,7 +20,7 @@ const FilledButton = styled.button`
   } 
 `;
 
-const EmptyButton = styled.button`
+export const EmptyButton = styled.button`
   display: block;
   padding: 1rem;
   margin: 0.25rem 0.25rem 0 0;

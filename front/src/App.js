@@ -13,10 +13,14 @@ import Contact from './pages/Contact';
 import Rating from './pages/Rating';
 import Tenant from './pages/Tenant';
 import Ad from './pages/Ad';
+import Nav from './components/Nav';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
+    <>
     <Router>
+      <Nav />
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/login" element={<Login/>} />
@@ -28,7 +32,9 @@ function App() {
             <Route path="/messagebox" element={<MessageBox/>} />
             <Route path="/Rating" element={<Rating/>} />
         </Routes>
+      <Footer />
     </Router>
+    </>
   );
 }
 

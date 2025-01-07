@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Nav from '../components/Nav'
 
 const LoginContainer = styled.div`
   display:flex;
@@ -80,7 +79,6 @@ const LoginLink = styled.a`
 const Registration = () => {
   return (
     <>
-      <Nav />
       <LoginContainer>
           <LoginForm>
               <LoginTitle>

@@ -1,9 +1,8 @@
 import React from 'react'
-import Nav from '../components/Nav'
 import styled from 'styled-components'
 import Button from '../components/Button'
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 const AdContainer = styled.div`
@@ -47,10 +46,9 @@ const AdImg = styled.img`
 const Ad = () => {
   return (
     <>
-        <Nav />
         <AdContainer>
           <AdWrapper>
-          <Carousel 
+          {/* <Carousel 
             showArrows={false}  // Masque les boutons "Précédent" et "Suivant"
             showStatus={false}  // Masque le statut (ex : "1 sur 3")
             swipeable={true}
@@ -60,7 +58,7 @@ const Ad = () => {
               <AdImg src="assets/images/ad/appartment.jpg" alt="Apartment" />
               <AdImg src="assets/images/ad/appartment.jpg" alt="Apartment" />
               <AdImg src="assets/images/ad/appartment.jpg" alt="Apartment" />
-            </Carousel>
+            </Carousel> */}
         <AdDetail>
           <AdFeatures>
               <AdFeaturesText fw="bold" fs="2em">1500€/mois</AdFeaturesText>

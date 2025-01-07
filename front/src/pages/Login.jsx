@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Nav from '../components/Nav'
 import Button from '../components/Button'
 
 const LoginContainer = styled.div`
@@ -63,7 +62,6 @@ const LoginLink = styled.a`
 const Login = () => {
   return (
     <>
-      <Nav />
       <LoginContainer>
           <LoginForm>
               <LoginTitle>
