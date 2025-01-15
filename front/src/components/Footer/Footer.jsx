@@ -41,12 +41,12 @@ export default function Footer() {
       <FooterContainer>
         <FooterSectionContainer>
           <FooterLinksContainer>
-          <h4>La société</h4>
+          <h4>Services</h4>
             <ul>
-                <li><a href="#">A propos de nous</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Presse</a></li>
-              <li><a href="#">Blog</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/registration">Inscription</a></li>
+              <li><a href="/ads">Annonces</a></li>
               </ul>
           </FooterLinksContainer>
           <FooterLinksContainer>
@@ -59,7 +59,7 @@ export default function Footer() {
               </ul>
           </FooterLinksContainer>
           <FooterLinksContainer>
-          <h4>La société</h4>
+          <h4>Assistance</h4>
             <ul>
                 <li><a href="#">A propos de nous</a></li>
                 <li><a href="#">Contact</a></li>
@@ -76,7 +76,6 @@ export default function Footer() {
             <ul>
               <li><a href="#">Conditions générales</a></li>
               <li><a href="#">Politique de confidentialité</a></li>
-              <li><a href="#">Plan du site</a></li>
             </ul>  
           </FooterBelowLinks> 
         </FooterSectionContainer>
